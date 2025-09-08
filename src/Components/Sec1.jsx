@@ -1,7 +1,7 @@
-import Track_Doodle from '../assets/Track_Doodle.png'
-import Grow_Doodle from '../assets/Grow_Doodle.png'
-import Google_Logo from '../assets/Google_Logo.png'
-import Phone_Mockup from '../assets/Phone_Mockup.png'
+import TrackDoodle from '../assets/Track_Doodle.png'
+import GrowDoodle from '../assets/Grow_Doodle.png'
+import GoogleLogo from '../assets/Google_Logo.png'
+import PhoneMockup from '../assets/Phone_Mockup.png'
 
 const Sec1 = () => {
   return (
@@ -12,7 +12,7 @@ const Sec1 = () => {
                     <span className="relative inline-block">
                         <span className="relative z-10 bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] bg-clip-text text-transparent">TRACK</span>
                         <img
-                        src={Track_Doodle}
+                        src={TrackDoodle}
                         alt="Track Doodle"
                         className="absolute left-0 -top-1 -z-11"
                         />
@@ -21,7 +21,7 @@ const Sec1 = () => {
                     <span className="relative inline-block ml-2 bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] bg-clip-text text-transparent">
                         GROW
                         <img
-                        src={Grow_Doodle}
+                        src={GrowDoodle}
                         alt="Grow Doodle"
                         className="absolute -right-8 -top-6 w-12"
                         />
@@ -36,7 +36,7 @@ const Sec1 = () => {
                             <span className="font-bold text-2xl text-[var(--gray)]">4.5</span>
                             <p className="text-[var(--gray)] text-2xl">Rating on</p>
                             <span className="">
-                                <img src={Google_Logo} alt="Google_Logo"/>
+                                <img src={GoogleLogo} alt="Google_Logo"/>
                             </span>
                             <hr className="w-[1px] h-8 bg-[var(--gray-sec)]"/>
                         </div>
@@ -51,7 +51,7 @@ const Sec1 = () => {
                     </div>            
                 </div>
                 <div>
-                    <img src={Phone_Mockup} alt="Phone Mockup" className="flex items-center justify-center mt-12"/>
+                    <img src={PhoneMockup} alt="Phone Mockup" className="flex items-center justify-center mt-12"/>
                 </div>
             </section> 
     </>

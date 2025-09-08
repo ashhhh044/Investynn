@@ -1,4 +1,4 @@
-import Invest_Illustration from '../assets/Invest_Illustration.png'
+import InvestIllustration from '../assets/Invest_Illustration.png'
 import Vector from '../assets/Vector.png'
 
 const Sec2 = () => {
@@ -16,7 +16,7 @@ const Sec2 = () => {
             <button className="px-6 py-2 rounded-lg border-2 border-[var(--primary)] text-[var(--primary)] hover:bg-[var(--primary)] hover:text-white transition w-3xs">Start Your Journey</button>
         </div>
         <div className="flex">
-            <img src={Invest_Illustration} alt="invest_illustration" />
+            <img src={InvestIllustration} alt="invest_illustration" />
         </div>
         </section>
     </>
