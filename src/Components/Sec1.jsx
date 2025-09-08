@@ -1,6 +1,6 @@
 import TrackDoodle from '../assets/Track_Doodle.png'
 import GrowDoodle from '../assets/Grow_Doodle.png'
-import GoogleLogo from '../assets/Google_Logo.png'
+import GoogleLogo from '../assets/Google_logo.png'
 import PhoneMockup from '../assets/Phone_Mockup.png'
 
 const Sec1 = () => {
