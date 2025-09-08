@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Zeyada&display=swap');
+@import "tailwindcss";
+
+
+:root {
+  font-family: "Inter", sans-serif;
+  --bg: #EFF8FF;
+  --nav-bg: #FFFFFF;
+  --primary: #1E88E5;
+  --secondary: #114B7F;
+  --text-pri: #688DAD; 
+  --gray: #737373;
+  --gray-sec: #505050;
+  --line: #99C4F14D;
+  --line-sec:#89C0F1;
+  --footer: #12538C;
+  --faq-blue: #288CE3;
+  --faq-gray: #93C5F1;
+}
+
+* {
+  box-sizing: border-box;
+  /* background-color: var(--bg); */
+  z-index: 0;
+}
+
+body{
+  background-color: var(--bg);
+}
+
+.zeyada {
+  font-family: "Zeyada", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+

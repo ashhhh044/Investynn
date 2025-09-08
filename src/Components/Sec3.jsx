@@ -1,0 +1,68 @@
+import React from 'react'
+
+const Sec3 = () => {
+  return (
+    <>
+        <section className="p-4 my-10">
+            <div className="relative w-full flex justify-center items-center py-10">
+                <div className="relative w-80 h-80 flex items-center justify-center">
+                <div
+                    className="absolute inset-0 rounded-full"
+                    style={{
+                    background: `conic-gradient(
+                        from 90deg,
+                        #1E88E5 0deg,
+                        #68A2D5 72deg,
+                        #93BBDE 144deg,
+                        #C2D6E7 216deg,
+                        #E2F2FF 288deg,
+                        #1E88E5 360deg
+                    )`,
+                    }}
+                ></div>
+                <div className="absolute inset-6 rounded-full bg-white shadow-lg flex flex-col items-center justify-center text-center p-4">
+                    <h2 className="text-lg text-[var(--gray)] font-bold">Invest Better, Every Day</h2>
+                    <hr className="w-full h-[1px] bg-[var(--line)] border-0 mt-2 mb-2" />
+                    <p className="text-sm text-[var(--gray)]">
+                    Track, learn, and stay ahead with tools built for Nepse investors.
+                    </p>
+                </div>
+                </div>
+
+                <div className="relative w-80 h-80 flex justify-center items-center">
+            {[
+                { title: "Portfolio", desc: "Easily track all your investments, monitor growth, and view detailed performance insights in one place.", angle: -85 },
+                { title: "Alerts", desc: "Set custom price alerts and get real-time notifications so you never miss the right trading opportunity.", angle: -54 },
+                { title: "Insights", desc: "Stay ahead with market analysis, trends, and data-driven insights designed to guide smarter investment decisions.", angle: -18 },
+                { title: "Learn", desc: "Explore simple, practical learning resources to build your knowledge and grow as a confident investor.", angle: 18 },
+                { title: "Watchlist", desc: "Organize and follow your favorite stocks, keeping their performance at your fingertips anytime.", angle: 54 },
+            ].map((item, index) => {
+                const radius = 180; 
+                const radians = (item.angle * Math.PI) / 180;
+                const x = radius * Math.cos(radians);
+                const y = radius * Math.sin(radians);
+
+                return (
+                <div
+                    key={index}
+                    className="absolute flex flex-row items-start w-48"
+                    style={{
+                    left: `calc(5% + ${x}px)`,
+                    top: `calc(60% + ${y}px)`,
+                    transform: "translate(-50%, -50%)",
+                    }}
+                >
+                    <h3 className="font-semibold mr-2">{item.title}</h3>
+                    <p className="text-sm text-gray-500">{item.desc}</p>
+                </div>
+                );
+            })}
+            </div>
+
+            </div>
+        </section>
+    </>
+  )
+}
+
+export default Sec3
