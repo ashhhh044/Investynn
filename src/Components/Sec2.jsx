@@ -4,7 +4,7 @@ import Vector from '../assets/Vector.png'
 const Sec2 = () => {
   return (
     <>
-        <section className="flex items-center justify-between gap-4 w-90% border-2 px-16 py-2 mx-4 bg-white border-t-2 border-t-[var(--line)] border-b-2 border-b-[var(--line)] border-l-0 border-r-0">
+        <section className="w-3/4 flex items-center justify-between border-2 px-20 mx-auto rounded-lg bg-white border-t-2 border-t-[var(--line)] border-b-2 border-b-[var(--line)] border-l-0 border-r-0">
         <div className="flex flex-col gap-4">
             <h1 className="text-7xl font-bold relative bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] bg-clip-text text-transparent">
             Investing <br />
@@ -13,7 +13,7 @@ const Sec2 = () => {
                 Simple
             </span>
             </h1>
-            <button className="px-6 py-2 rounded-lg border-2 border-[var(--primary)] text-[var(--primary)] hover:bg-[var(--primary)] hover:text-white transition w-3xs">Start Your Journey</button>
+            <button className="px-4 py-2 rounded-lg border-2 border-[var(--primary)] text-[var(--primary)] hover:bg-[var(--primary)] hover:text-white transition w-3xs">Start Your Journey</button>
         </div>
         <div className="flex">
             <img src={InvestIllustration} alt="invest_illustration" />

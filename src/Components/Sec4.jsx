@@ -1,54 +1,80 @@
+import InvestIllustration from '../assets/Invest_Illustration.png'
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Sec4 = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,   
+    autoplay: true,
+    autoplaySpeed: 3000,
+  };
+
+  const cards = [
+    {
+      img: InvestIllustration,
+      title: "What is Investynn?",
+      heading: "Heading",
+      desc: "Investynn makes investing simple, transparent, and accessible for everyone.",
+    },
+    {
+      img: InvestIllustration,
+      title: "Why choose us?",
+      heading: "Heading",
+      desc: "We provide expert insights and easy-to-use tools for smarter investing.",
+    },
+    {
+      img: InvestIllustration,
+      title: "How to start?",
+      heading: "Heading",
+      desc: "Sign up, explore opportunities, and begin your investment journey today.",
+    },
+    {
+      img: InvestIllustration,
+      title: "Secure & Reliable",
+      heading: "Heading",
+      desc: "Your data and investments are safe with industry-leading security measures.",
+    },
+    {
+      img: InvestIllustration,
+      title: "Accessible to All",
+      heading: "Heading",
+      desc: "Our platform is built for beginners and experts alike.",
+    },
+  ];
+
   return (
-    <>
-        <section className="max-w-4xl mx-auto px-6 py-12 justify-between">
-        <div className="flex flex-row items-center">
-            <div className="mb-10 justify-items-start w-md p-4">
-                <h1 className="text-4xl font-medium text-[var(--faq-blue)]">
-                Frequently Asked Questions
-                </h1>
-                <p className="mt-2 text-[var(--faq-gray)]">
-                    Find answers to common questions about investing and using Investynn.
+    <section className="bg-white mx-auto mt-20 p-4 mb-6 w-3/4">
+      <h1 className="text-6xl font-extrabold text-[var(--sec4-title)] text-center">
+        Getting Started Guide
+      </h1>
+
+      <Slider {...settings} className="mt-8">
+        {cards.map((c, i) => (
+          <div key={i} className="p-4">
+            <div className="flex flex-col shadow-lg rounded-xl h-full w-3xs">
+              <div className="rounded-t-xl">
+                <img src={c.img} alt="Card_Img" />
+              </div>
+              <div className="p-4">
+                <p className="text-[var(--sec4-gray)] font-semibold text-xl">
+                  {c.title}
                 </p>
+                <p className="text-base font-semibold text-[var(--sec4-gray-sec)]">
+                  {c.heading}
+                </p>
+                <p className="text-[var(--sec4-gray-sec)]">{c.desc}</p>
+              </div>
             </div>
+          </div>
+        ))}
+      </Slider>
+    </section>
+  );
+};
 
-            <div className="space-y-4 w-1/2">
-                <details className="group border border-gray-300 rounded-lg p-4 bg-white shadow-[0_4px_6px_-2px_rgba(0,0,0,0.1)]">
-                    <summary className="cursor-pointer text-lg font-medium text-[var(--text-pri)] flex justify-between items-center">
-                        What is Investynn?
-                        <span className="transition-transform group-open:rotate-180">⌄</span>
-                    </summary>
-                        <p className="mt-2 text-[var(--text-sec)]">
-                        Investynn is a platform that makes investing simple, transparent, and accessible for everyone.
-                        </p>
-                </details>
-                <details className="group border border-gray-300 rounded-lg p-4 bg-white shadow-[0_4px_6px_-2px_rgba(0,0,0,0.1)]">
-                    <summary className="cursor-pointer text-lg font-medium text-[var(--text-pri)] flex justify-between items-center">
-                        What is Investynn?
-                        <span className="transition-transform group-open:rotate-180">⌄</span>
-                    </summary>
-                        <p className="mt-2 text-[var(--text-sec)]">
-                        Investynn is a platform that makes investing simple, transparent, and accessible for everyone.
-                        </p>
-                </details>
-                <details className="group border border-gray-300 rounded-lg p-4 bg-white shadow-[0_4px_6px_-2px_rgba(0,0,0,0.1)]">
-                    <summary className="cursor-pointer text-lg font-medium text-[var(--text-pri)] flex justify-between items-center">
-                        What is Investynn?
-                        <span className="transition-transform group-open:rotate-180">⌄</span>
-                    </summary>
-                        <p className="mt-2 text-[var(--text-sec)]">
-                        Investynn is a platform that makes investing simple, transparent, and accessible for everyone.
-                        </p>
-                </details>
-            </div>
-
-        </div>
-            
-        </section>
-
-    </>
-  )
-}
-
-export default Sec4
+export default Sec4;

@@ -2,6 +2,7 @@
 @import "tailwindcss";
 
 
+
 :root {
   font-family: "Inter", sans-serif;
   --bg: #EFF8FF;
@@ -16,6 +17,9 @@
   --footer: #12538C;
   --faq-blue: #288CE3;
   --faq-gray: #93C5F1;
+  --sec4-title: #1E88E5BD;
+  --sec4-gray: #838383;
+  --sec4-gray-sec: #999999;
 }
 
 * {
