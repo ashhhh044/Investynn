@@ -48,7 +48,7 @@ const Sec4 = () => {
   ];
 
   return (
-    <section className="bg-white mx-auto mt-20 p-4 mb-6 w-3/4">
+    <section className="bg-white mx-auto mt-20 p-4 mb-6">
       <h1 className="text-6xl font-extrabold text-[var(--sec4-title)] text-center">
         Getting Started Guide
       </h1>
