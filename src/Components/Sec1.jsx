@@ -6,15 +6,15 @@ import PhoneMockup from '../assets/Phone_Mockup.png'
 const Sec1 = () => {
   return (
     <>
-        <section className="mx-auto flex flex-col items-center justify-center pt-10">
+        <section className="mx-auto flex flex-col items-center justify-center pt-10 mt-10">
                 <div className="flex flex-col items-center relative">
-                    <h1 className="text-7xl font-bold relative flex items-center gap-2 bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] bg-clip-text text-transparent">
+                    {/* <h1 className="text-7xl font-bold relative flex items-center gap-2 bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] bg-clip-text text-transparent">
                     <span className="relative inline-block">
                         <span className="relative z-10 bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] bg-clip-text text-transparent">TRACK</span>
                         <img
                         src={TrackDoodle}
                         alt="Track Doodle"
-                        className="absolute left-0 -top-1 -z-11"
+                        className="absolute left-0 -top-4 -z-11 scale-130"
                         />
                     </span>
                     , LEARN,
@@ -23,28 +23,57 @@ const Sec1 = () => {
                         <img
                         src={GrowDoodle}
                         alt="Grow Doodle"
-                        className="absolute -right-8 -top-6 w-12"
+                        className="absolute -right-8 -top-6 w-12 scale-130"
                         />
                     </span>
                     </h1>
-                    <br/>
+                    <br/> */}
+
+                    <h1 className="text-7xl font-bold poppins relative flex items-center gap-2 bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] bg-clip-text text-transparent">
+                        TRACK, LEARN, GROW
+                    <span className="inline-block">                    
+                        <span className="z-10 bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)]">
+                            <img
+                            src={TrackDoodle}
+                            alt="Track Doodle"
+                            className="absolute -left-5 -top-8 -z-11"
+                            />
+                         </span>
+                         <span className="inline-block ml-2 bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] bg-clip-text text-transparent">                        
+                            <img
+                            src={GrowDoodle}
+                            alt="Grow Doodle"
+                            className="absolute -right-4 -top-6 w-12 scale-130"
+                            />
+                        </span>
+                    </span>
+                    </h1>  
+                    <br/>                  
+                    
                     </div>
-                    <h2 className="font-medium text-2xl/3 text-[var(--text-pri)] mb-12">Track and manage your investments efficiently.</h2>            
+                    <h2 className="poppins font-medium text-2xl/3 text-[var(--text-pri)] mb-12">Track and manage your investments efficiently.</h2>            
                     <div>
-                    <div className="flex items-center justify-between gap-8">
-                        <div className="flex items-center gap-2">
-                            <span className="font-bold text-2xl text-[var(--gray)]">4.5</span>
-                            <p className="text-[var(--gray)] text-2xl">Rating on</p>
+                    <div className="flex items-center justify-between gap-4">
+                        {/* <div className="flex items-center gap-2">
+                            <p className="font-bold text-2xl text-[var(--gray)]">4.5</p>
+                            <p className="poppins text-[var(--gray)] text-base">Rating on</p>
                             <span className="">
                                 <img src={GoogleLogo} alt="Google_Logo"/>
                             </span>
                             <hr className="w-[1px] h-8 bg-[var(--gray-sec)]"/>
+                        </div> */}
+                        <div className="flex items-center gap-3">
+                            <p className="poppins font-semibold text-2xl text-[var(--gray)] leading-none">4.5</p>
+                            <p className="poppins text-[var(--gray)] text-base leading-none">Rating on</p>
+                            <img src={GoogleLogo} alt="Google_Logo"/>
+<div className="h-10 w-[2px] bg-[rgba(151,151,151,0.5)] shadow-lg"></div>
                         </div>
-                        <div className="flex items-center gap-4">
-                            <button className="px-6 py-1.5 rounded-lg border-2 border-[var(--primary)] text-[var(--primary)] hover:bg-[var(--primary)] hover:text-white transition">
+
+                        <div className="flex items-center gap-3">
+                            <button className="min-w-[100px] px-5 py-1.5 rounded-xl border-1 border-[var(--primary)] text-[var(--primary)] bg-white font-semibold shadow-lg hover:shadow-2xl hover:bg-[var(--primary)] hover:text-white">
                             Download Now
                             </button>
-                            <button className="px-6 py-1.5 rounded-lg bg-[var(--primary)] text-white hover:bg-transparent hover:text-[var(--primary)] hover:border-[var(--primary)] hover:border-2">
+                            <button className="min-w-[100px] px-5 py-1.5 rounded-xl border-1 border-[var(--primary)] bg-[var(--primary)] text-white font-semibold shadow-lg hover:shadow-2xl hover:bg-[rgba(255,255,255,0.39)] hover:text-[var(--primary)]">
                             Try It
                             </button>
                         </div>
