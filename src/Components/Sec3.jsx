@@ -1,4 +1,9 @@
 import React from 'react'
+import Portfolio_Icon from '../assets/Portfolio_Icon.png'
+import Alert_Icon from '../assets/Alert_Icon.png'
+import Insights_Icon from '../assets/Insights_Icon.png'
+import Learn_Icon from '../assets/Learn_Icon.png'
+import Watchlist_Icon from '../assets/Watchlist_Icon.png'
 
 const Sec3 = () => {
   return (
@@ -21,9 +26,9 @@ const Sec3 = () => {
                     }}
                 ></div>
                 <div className="absolute inset-6 rounded-full bg-white shadow-lg flex flex-col items-center justify-center text-center p-4">
-                    <h2 className="text-lg text-[var(--gray)] font-bold">Invest Better, Every Day</h2>
-                    <hr className="w-full h-[1px] bg-[var(--line)] border-0 mt-2 mb-2" />
-                    <p className="text-sm text-[var(--gray)]">
+                    <h2 className="poppins text-xl text-[#9F9D9D] font-bold">Invest Better, Every Day</h2>
+                    <hr className="w-full border-[#9F9D9D] border-0.5 mt-1 mb-2" />
+                    <p className="w-[90%] text-sm text-[#848484] font-normal">
                     Track, learn, and stay ahead with tools built for Nepse investors.
                     </p>
                 </div>
@@ -31,7 +36,7 @@ const Sec3 = () => {
 
                 <div className="relative w-80 h-80 flex justify-center items-center">
             {[
-                { title: "Portfolio", desc: "Easily track all your investments, monitor growth, and view detailed performance insights in one place.", angle: -85 },
+                { img: {Portfolio_Icon}, title: "Portfolio", desc: "Easily track all your investments, monitor growth, and view detailed performance insights in one place.", angle: -85 },
                 { title: "Alerts", desc: "Set custom price alerts and get real-time notifications so you never miss the right trading opportunity.", angle: -54 },
                 { title: "Insights", desc: "Stay ahead with market analysis, trends, and data-driven insights designed to guide smarter investment decisions.", angle: -18 },
                 { title: "Learn", desc: "Explore simple, practical learning resources to build your knowledge and grow as a confident investor.", angle: 18 },
@@ -52,6 +57,7 @@ const Sec3 = () => {
                     transform: "translate(-50%, -50%)",
                     }}
                 >
+                    <img src={item.img} alt="Icon" className="w-fit h-10"/>
                     <h3 className="font-semibold mr-2">{item.title}</h3>
                     <p className="text-sm text-gray-500">{item.desc}</p>
                 </div>
