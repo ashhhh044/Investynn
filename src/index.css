@@ -49,3 +49,10 @@ body{
   font-family: "Rock Salt", cursive;
 }
 
+.slick-list {
+  overflow: visible !important;
+}
+
+.slick-slider {
+  min-height: 700px; /* adjust based on your card height + transform */
+}
