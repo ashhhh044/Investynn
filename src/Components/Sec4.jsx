@@ -1,5 +1,9 @@
 import card1 from '../assets/cards/card1.png';
 import First_Strip from '../assets/cards/First_Strip.png';
+import card2 from '../assets/cards/card2.png';
+import Sec_Strip from '../assets/cards/Sec_Strip.png';
+import card3 from '../assets/cards/card3.png';
+import Thr_Strip from '../assets/cards/Thr_Strip.png';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -37,18 +41,18 @@ const Sec4 = () => {
       desc: "Description: Discover the do's and don'ts of trading so you can make smarter decisions and minimize risks.",
     },
     {
-      img_f: card1,
-      img_s: First_Strip,
-      title: "Smart Tips",
-      heading: "Avoid Common Mistakes",
-      desc: "Description: Discover the do's and don'ts of trading so you can make smarter decisions and minimize risks.",
+      img_f: card2,
+      img_s: Sec_Strip,
+      title: "Trading Basics",
+      heading: "Understand the Market",
+      desc: "Description: Learn how NEPSE works, key terms, and the essentials you need before making your first trade.",
     },
     {
-      img_f: card1,
-      img_s: First_Strip,
-      title: "Smart Tips",
-      heading: "Avoid Common Mistakes",
-      desc: "Description: Discover the do's and don'ts of trading so you can make smarter decisions and minimize risks.",
+      img_f: card3,
+      img_s: Thr_Strip,
+      title: "Getting Started",
+      heading: "Your First Investment",
+      desc: "Description: Step-by-step guidance on opening account, choosing stocks, & placing your first order with confidence.",
     },
     {
       img_f: card1,
@@ -103,7 +107,7 @@ const Sec4 = () => {
 
       <div className="relative w-full py-2 z-10">
 
-        <div className="absolute inset-0 flex flex-col justify-end items-center opacity-10 pointer-events-none z-0 mb-4 space-y-0.5">
+        <div className="absolute inset-0 flex flex-col justify-end items-center opacity-10 pointer-events-none z-0 mb-4">
           <div className="flex justify-center space-y-0.5">
             {Array.from({ length: 7 }).map((_, i) => (
               <span
@@ -131,9 +135,9 @@ const Sec4 = () => {
 
         <Slider {...settings} className="py-2 h-auto z-10">
           {cards.map((c, i) => (
-            <div key={i} className="px-0.5"> 
+            <div key={i} className=""> 
               <div
-                className={`relative w-[313px] mx-auto shadow-2xl rounded-4xl overflow-hidden bg-white transform transition-all duration-300 ${
+                className={`relative w-[313px] shadow-2xl rounded-4xl overflow-hidden bg-white transform transition-all ${
                   i % 2 === 1 ? "translate-y-8" : "translate-y-0"
                 }`}
               >
@@ -147,7 +151,7 @@ const Sec4 = () => {
                   alt={c.title}
                   className="w-full h-[200px] object-cover relative z-10 rounded-t-4xl"
                 />
-                <div className="px-6 py-6 bg-white relative z-10 rounded-tl-4xl">
+                <div className="px-6 py-4 bg-white relative z-10 rounded-tl-4xl">
                   <h3 className="poppins font-extrabold text-xl text-[#838383]">{c.title}</h3>
                   <p className="poppins text-lg font-semibold text-[#999999] mt-2 leading-[113%]">
                     {c.heading}

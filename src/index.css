@@ -56,3 +56,13 @@ body{
 .slick-slider {
   min-height: 700px; /* adjust based on your card height + transform */
 }
+
+/* Target every other slick slide */
+.custom-slider .slick-slide:nth-child(even) > div > div {
+  transform: translateY(20px);
+}
+
+.custom-slider .slick-slide:nth-child(odd) > div > div {
+  transform: translateY(-20px);
+}
+
