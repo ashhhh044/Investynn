@@ -1,13 +1,13 @@
 import React from 'react'
-import Navbar from '../Components/Navbar.js'
+import Navbar from '../Components/Navbar'
 
-import Footer from '../Components/Footer.js'
-import Sec1 from '../Components/Sec1.js'
-import Sec2 from '../Components/Sec2.js'
-import Sec3 from '../Components/Sec3.js'
-import Sec4 from '../Components/Sec4.js'
-import Sec5 from '../Components/Sec5.js'
-import Sec6 from '../Components/Sec6.js'
+import Footer from '../Components/Footer'
+import Sec1 from '../Components/Sec1'
+import Sec2 from '../Components/Sec2'
+import Sec3 from '../Components/Sec3'
+import Sec4 from '../Components/Sec4'
+import Sec5 from '../Components/Sec5'
+import Sec6 from '../Components/Sec6'
 
 const Index = () => {
   return (

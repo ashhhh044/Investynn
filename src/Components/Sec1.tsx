@@ -8,27 +8,7 @@ const Sec1 = () => {
     <>
         <section className="mx-auto flex flex-col items-center justify-center pt-10 mt-10">
                 <div className="flex flex-col items-center relative">
-                    {/* <h1 className="text-7xl font-bold relative flex items-center gap-2 bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] bg-clip-text text-transparent">
-                    <span className="relative inline-block">
-                        <span className="relative z-10 bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] bg-clip-text text-transparent">TRACK</span>
-                        <img
-                        src={TrackDoodle}
-                        alt="Track Doodle"
-                        className="absolute left-0 -top-4 -z-11 scale-130"
-                        />
-                    </span>
-                    , LEARN,
-                    <span className="relative inline-block ml-2 bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] bg-clip-text text-transparent">
-                        GROW
-                        <img
-                        src={GrowDoodle}
-                        alt="Grow Doodle"
-                        className="absolute -right-8 -top-6 w-12 scale-130"
-                        />
-                    </span>
-                    </h1>
-                    <br/> */}
-
+                   
                     <h1 className="text-7xl font-bold poppins relative flex items-center gap-2 bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] bg-clip-text text-transparent">
                         TRACK, LEARN, GROW
                     <span className="inline-block">                    
@@ -54,14 +34,7 @@ const Sec1 = () => {
                     <h2 className="poppins font-medium text-2xl/3 text-[var(--text-pri)] mb-12">Track and manage your investments efficiently.</h2>            
                     <div>
                     <div className="flex items-center justify-between gap-4">
-                        {/* <div className="flex items-center gap-2">
-                            <p className="font-bold text-2xl text-[var(--gray)]">4.5</p>
-                            <p className="poppins text-[var(--gray)] text-base">Rating on</p>
-                            <span className="">
-                                <img src={GoogleLogo} alt="Google_Logo"/>
-                            </span>
-                            <hr className="w-[1px] h-8 bg-[var(--gray-sec)]"/>
-                        </div> */}
+                       
                         <div className="flex items-center gap-3">
                             <p className="poppins font-semibold text-2xl text-[var(--gray)] leading-none">4.5</p>
                             <p className="poppins text-[var(--gray)] text-base leading-none">Rating on</p>

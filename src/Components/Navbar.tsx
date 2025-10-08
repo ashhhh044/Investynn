@@ -1,4 +1,5 @@
 import Investynn_Logo from '../assets/Investynn_Logo.png'
+
 const Navbar = () => {
   return (
     <nav className="top-10 z-50  w-9/10 bg-[rgba(255,255,255,0.39)] mx-auto rounded-2xl mt-4">

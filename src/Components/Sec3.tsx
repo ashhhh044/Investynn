@@ -1,4 +1,3 @@
-import React from 'react'
 import Portfolio_Icon from '../assets/Portfolio_Icon.png'
 import Alert_Icon from '../assets/Alert_Icon.png'
 import Insights_Icon from '../assets/Insights_Icon.png'
@@ -21,9 +20,7 @@ const Sec3 = () => {
                         Track, learn, and stay ahead with tools built for Nepse investors.
                         </p>
                     </div>
-                    {/* <div>
-                        <img src= {Outer_Ring} alt="Outer_Ring" className=" absolute -top-5 left-30"/>
-                    </div> */}
+                   
                     <svg
                       className="absolute"
                       width="400"
@@ -36,8 +33,6 @@ const Sec3 = () => {
                           x1="0%" y1="0%"
                           x2="0%" y2="100%"   
                         >
-                            background: linear-gradient(180deg, #E2F2FF 0%, #C2D6E7 24.04%, #93BBDE 47.6%, #68A2D5 72.12%, #1E88E5 100%);
-
                           <stop offset="0%" stopColor="#E2F2FF" />
                           <stop offset="24.04%" stopColor="#C2D6E7" />
                           <stop offset="47.6%" stopColor="#93BBDE" />
@@ -54,8 +49,8 @@ const Sec3 = () => {
                         stroke="url(#arcGradient)"
                         strokeWidth="18"
                         strokeLinecap="round"
-                        strokeDasharray="565 1130"  // visible arc then hidden
-                        transform="rotate(-90 200 200)" // rotate so arc is on the right
+                        strokeDasharray="565 1130" 
+                        transform="rotate(-90 200 200)" 
                       />
                     </svg>
                 </div>

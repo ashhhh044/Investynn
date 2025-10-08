@@ -1,5 +1,4 @@
 import InvestIllustration from '../assets/Invest_Illustration.png'
-import Vector from '../assets/Vector.png'
 
 const Sec2 = () => {
   return (
