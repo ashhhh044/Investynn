@@ -1,10 +1,8 @@
-import Index from './Pages/Index'
 
 function App() {
 
   return (
     <>
-    <Index />
     </>
   )
 }
