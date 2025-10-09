@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+
+    // Environment Options
+    "module": "ESNext",
+    "target": "ESNext",
+    
+    // Stricter Typechecking Options
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    // Recommended Options
+    "strict": true,
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+  },
+  "include": ["src"],
+}

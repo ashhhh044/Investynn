@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rock+Salt&family=Zeyada&display=swap');
+@import "tailwindcss";
+
+
+
+:root {
+  --bg: #EFF8FF;
+  --nav-bg: #FFFFFF;
+  --primary: #1E88E5;
+  --secondary: #114B7F;
+  --text-pri: #688DAD; 
+  --gray: #737373;
+  --gray-sec: #505050;
+  --line: #99C4F14D;
+  --line-sec:#89C0F1;
+  --footer: #12538C;
+  --faq-blue: #288CE3;
+  --faq-gray: #93C5F1;
+  --sec4-title: #1E88E5BD;
+  --sec4-gray: #838383;
+  --sec4-gray-sec: #999999;
+}
+
+* {
+  box-sizing: border-box;
+  /* background-color: var(--bg); */
+  z-index: 0;
+}
+
+body{
+  background-color: var(--bg);
+}
+
+.inter{
+   font-family: "Inter", sans-serif;
+}
+
+.poppins{
+ font-family: "Poppins", sans-serif;
+}
+
+.zeyada {
+  font-family: "Zeyada", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.rock-salt{
+  font-family: "Rock Salt", cursive;
+}
+
+.slick-list {
+  overflow: visible !important;
+}
+
+.slick-slider {
+  min-height: 700px; /* adjust based on your card height + transform */
+}
+
+/* Target every other slick slide */
+.custom-slider .slick-slide:nth-child(even) > div > div {
+  transform: translateY(20px);
+}
+
+.custom-slider .slick-slide:nth-child(odd) > div > div {
+  transform: translateY(-20px);
+}
+
