@@ -5,7 +5,7 @@ import Image3 from '../assets/Section1/Image3.png'
 const Section1 = () => {
   return (
     <>
-     <div className="flex justify-between mx-12 py-4 gap-4">
+     <div className="flex justify-between mx-12 py-4 gap-4 mt-2">
             <div className="">
                 <img src={Image1} alt="Grid Item 1" />
             </div>
