@@ -1,8 +1,9 @@
 import { createColumnHelper, getCoreRowModel, useReactTable, flexRender, getPaginationRowModel, } from '@tanstack/react-table'
 import type { ColumnDef } from '@tanstack/react-table'
 import data from '../assets/stockData.json'
-import { FaCaretDown, FaCaretUp } from 'react-icons/fa'
+import { FaCaretDown, FaCaretUp, FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 import { useState } from 'react'
+import { BiBookmark } from 'react-icons/bi'
 
 export default function Section4() {
     type Stock = {
@@ -23,7 +24,16 @@ export default function Section4() {
     });
     const columnHelper = createColumnHelper<Stock>()
     const columns: ColumnDef<Stock, any>[] = [
-        columnHelper.accessor(row => row['#'], { id: '#', header: '#', cell: info => info.getValue() }),
+        columnHelper.accessor(row => row['#'], 
+            { id: '#', 
+                header: '#', 
+                cell: (info) => (
+                    <div className="flex items-center space-x-1">
+                        <BiBookmark />
+                        <span>{info.getValue()}</span>
+                    </div>
+                )
+            }),
         columnHelper.accessor('symbol', { header: 'Symbol' }),
         columnHelper.accessor('LTP', { header: 'LTP' }),
         columnHelper.accessor(row => row['%change'], {
@@ -71,6 +81,12 @@ export default function Section4() {
         onPaginationChange: setPagination,
         getCoreRowModel: getCoreRowModel(),
         getPaginationRowModel: getPaginationRowModel(),
+        initialState: {
+            pagination: {
+            pageIndex: 0,
+            pageSize: 10,
+            },
+        },
 
     })
 
@@ -112,16 +128,48 @@ export default function Section4() {
                 </tbody>
 
             </table>
-            <div>
-                Showing{" "}
-                {table.getState().pagination.pageIndex * table.getState(). pagination.pageSize + 1}
-                -
-                {Math.min(
-                    (table.getState().pagination.pageIndex + 1) *
-                    table.getState().pagination.pageSize,
-                    data.stocks.length
-                )}{" "}
-                of {data.stocks.length} results
+            <div className='relative mt-8 flex items-center'>
+                <div className='absolute left-0 inter text-sm font-medium text-[#575757]'>
+                    Showing{" "}
+                    {table.getState().pagination.pageIndex * table.getState(). pagination.pageSize + 1}
+                    -
+                    {Math.min(
+                        (table.getState().pagination.pageIndex + 1) *
+                        table.getState().pagination.pageSize,
+                        data.stocks.length
+                    )}{" "}
+                    of {data.stocks.length} results
+                </div>
+                <div className="mx-auto space-x-1 flex items-center">
+                    <button 
+                    onClick={()=>table.previousPage()}
+                    disabled={!table.getCanPreviousPage()}
+                    className="text-[#7F7F7F]">
+                        <FaChevronLeft />
+                    </button>
+
+                    {Array.from({ length: table.getPageCount()}, (_, i) => (
+                        <button
+                        key={i}
+                        onClick = {() => table.setPageIndex(i)}
+                        className={`px-3 py-1 rounded-md ${
+                            table.getState().pagination.pageIndex === i
+                            ? "bg-[#E9F3FC] text-[#1E88E5]"
+                            : "text-[#262626] font-medium"
+                        }`}
+                        >
+                            {i+1}
+                        </button>
+                    ))}
+
+                    <button 
+                    onClick={()=>table.nextPage()}
+                    disabled={!table.getCanNextPage()}
+                    className="text-[#7F7F7F]">
+                        <FaChevronRight />
+                    </button>
+                    
+                </div>
             </div>
         </div>
     )
