@@ -1,3 +1,4 @@
+import Footer from "./Components/Footer"
 import Navbar from "./Components/Navbar"
 import Section1 from "./Components/Section1"
 import Section2 from "./Components/Section2"
@@ -14,6 +15,7 @@ const Index = () => {
             <Section3 />
             <Section4 />
             <Section5 />
+            <Footer />
         </div>
     )
 }
